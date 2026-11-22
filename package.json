@@ -1,0 +1,54 @@
+{
+  "name": "pi-refuseless-tether",
+  "version": "0.1.1",
+  "description": "Native Refuseless provider, live model catalog and credits for Pi",
+  "type": "module",
+  "license": "MIT",
+  "author": "kyraneth",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "refuseless",
+    "provider"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyraneth/pi-refuseless.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "src/index.ts",
+  "pi": {
+    "extensions": [
+      "src/index.ts"
+    ]
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "DETAILS.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.5.2",
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@types/node": "26.6.2",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "scan:public": "node scripts/check-public-tree.mjs"
+  },
+  "homepage": "https://github.com/kyraneth/pi-refuseless#readme",
+  "bugs": {
+    "url": "https://github.com/kyraneth/pi-refuseless/issues"
+  }
+}
